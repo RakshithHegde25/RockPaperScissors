@@ -67,8 +67,16 @@ function scissors(){
 }
 function checkwinner(count){
     if(playerscore>=5){
+        
         endMessageEl.innerText= "You won Overall :)"
+        setTimeout(() => {
+            document.location.reload();
+          }, 1000);
     }else if(compscore>=5){
-        endMessageEl.innerText= "Its a Tieeeeeeee :|"
+        
+        endMessageEl.innerText= "You Lost :("
+        setTimeout(() => {
+            document.location.reload();
+          }, 1000);
     }
 }
